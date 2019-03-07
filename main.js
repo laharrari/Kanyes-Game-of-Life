@@ -93,7 +93,7 @@ gameBoard.prototype.draw = function () {
                     GAME_ENGINE.ctx.fillRect(j * TILE_SIZE, i * TILE_SIZE, TILE_SIZE, TILE_SIZE);
                 }
                 if (GAME_ENGINE.debug) {
-                    GAME_ENGINE.ctx.strokeStyle = "white";
+                    GAME_ENGINE.ctx.strokeStyle = "#fdb897";
                     GAME_ENGINE.ctx.strokeRect(j * TILE_SIZE, i * TILE_SIZE, TILE_SIZE, TILE_SIZE);
                 }
             }
