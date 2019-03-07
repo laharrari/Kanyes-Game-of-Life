@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Kanye's Game of Life</title>
+    <link href="style/index.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+<body>
+      <div class="wrapper">
+        <canvas id="gameWorld" tabindex="1" width="600" height="600"></canvas>
+        <div id="sidebar">
+            <h2>Kanye's Game of Life</h2>
+            <hr>
+            <h3>Add/Remove Cell: Left Click</h3>
+            <h3>Pause/Start: Space</h3>
+            <h3>Grid Toggle: Q</h3>
+            <h3>Clear Grid: R</h3>
+            <h3>Step: W</h3>
+            <hr>
+            <h3 class="label">Play/Paused:</h3>
+            <h4>* Click anywhere to start</h4>
+            <img id="playPause" draggable="false" src="./img/pause.png" />
+            <button class="button" id="muteButton" type="button">Mute</button>
+            <input type="range" min="0.0" max="0.2" value="0.1" step="0.02" class="slider" id="volumeSlider">
+          </div></div>
+</body>
+</html>

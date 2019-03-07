@@ -1,0 +1,80 @@
+canvas {
+    position: absolute;
+    left: 30%;
+    margin-left:-300px;
+    top:50%;
+    margin-top:-300px;
+    background: white;
+}
+
+hr {
+    height: 2px;
+    color: black;
+    background-color: black;
+    border: none;
+}
+
+#sidebar {
+    position: absolute;
+    left: 80%;
+    top: 7%;
+    width: 60%;
+    height: 100%;
+    background-color: #fdb897;
+    float: right;
+    font-family: Arial;
+    font-size: 150%;
+    color: black;
+}
+
+.wrapper { 
+    margin: 0 auto;
+    width: 640px;
+    height: 775px;
+    position: relative;
+}
+
+.label {
+    display: inline;
+}
+
+#playPause {
+    position: absolute;
+    z-index: 1000;
+    float: bottom;
+    width:60px;
+    height:43px;
+    left: 50%;
+    top: 56.5%;
+}
+
+#volumeSlider {
+    position: absolute;
+    left: 0%;
+    top: 75%;
+    z-index: 1000;
+    float: bottom;
+}
+
+#muteButton {
+    font-family: Arial;
+    position: absolute;
+    left: 40%;
+    top: 75.3%;
+    z-index: 1000;
+    float: bottom;
+}
+
+body {
+    margin:0;
+    color:silver;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
