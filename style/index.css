@@ -2,7 +2,7 @@ canvas {
     position: absolute;
     left: 50%;
     margin-left:-300px;
-    top:50%;
+    top:51%;
     margin-top:-300px;
     background: white;
 }
@@ -17,7 +17,7 @@ hr {
 #sidebar {
     position: absolute;
     left: 100%;
-    top: 7%;
+    top: 8.5%;
     width: 60%;
     height: 100%;
     background-color: #fdb897;
@@ -30,9 +30,35 @@ hr {
 #topLeft {
     position: absolute;
     left:-34%;
-    top: 7%;
+    top: 8.5%;
     width: 36%;
     height: 100%;
+    background-color: #fdb897;
+    float: right;
+    font-family: Arial;
+    font-size: 142%;
+    color: black;
+}
+
+#bottomRight {
+    position: absolute;
+    left: 100%;
+    top: 76%;
+    width: 50%;
+    height: 0%;
+    background-color: #fdb897;
+    float: right;
+    font-family: Arial;
+    font-size: 142%;
+    color: black;
+}
+
+#banner {
+    position: absolute;
+    left: 8.5%;
+    top: 0%;
+    width: 85%;
+    height: 0%;
     background-color: #fdb897;
     float: right;
     font-family: Arial;
@@ -53,14 +79,14 @@ hr {
     float: bottom;
     width:60px;
     height:43px;
-    left: 65%;
-    top: 55.9%;
+    left: 64%;
+    top: 42.9%;
 }
 
 #volumeSlider {
     position: absolute;
     left: 0%;
-    top: 69%;
+    top: 58.5%;
     z-index: 1000;
     float: bottom;
 }
@@ -69,7 +95,7 @@ hr {
     font-family: Arial;
     position: absolute;
     left: 40%;
-    top: 69.2%;
+    top: 58.6%;
     z-index: 1000;
     float: bottom;
 }
