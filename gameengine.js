@@ -55,6 +55,7 @@ GameEngine.prototype.startInput = function () {
     var that = this;
 
     this.ctx.canvas.addEventListener("keydown", function (e) {
+        e.preventDefault();
         if (e.code === "KeyR") {
             BOARD_AREA.clearBoard();
         }
