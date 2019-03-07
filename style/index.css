@@ -1,6 +1,6 @@
 canvas {
     position: absolute;
-    left: 30%;
+    left: 40%;
     margin-left:-300px;
     top:50%;
     margin-top:-300px;
@@ -16,9 +16,22 @@ hr {
 
 #sidebar {
     position: absolute;
-    left: 80%;
+    left: 90%;
     top: 7%;
     width: 60%;
+    height: 100%;
+    background-color: #fdb897;
+    float: right;
+    font-family: Arial;
+    font-size: 142%;
+    color: black;
+}
+
+#topLeft {
+    position: absolute;
+    left:-44%;
+    top: 7%;
+    width: 36%;
     height: 100%;
     background-color: #fdb897;
     float: right;
