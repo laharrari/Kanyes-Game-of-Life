@@ -55,18 +55,6 @@ GameEngine.prototype.startInput = function () {
     var that = this;
 
     this.ctx.canvas.addEventListener("keydown", function (e) {
-        if (e.code === "KeyW") {
-            BOARD_AREA.nextStep();
-        } else if (e.keyCode === 32) {
-            if (that.pause) {
-                that.pause = false;
-                document.getElementById("playPause").src = "./img/play.png";
-            } else {
-                that.pause = true;
-                document.getElementById("playPause").src = "./img/pause.png";
-            }
-        }
-
         if (e.code === "KeyR") {
             BOARD_AREA.clearBoard();
         }
@@ -76,6 +64,18 @@ GameEngine.prototype.startInput = function () {
                 that.debug = false;
             } else {
                 that.debug = true;
+            }
+        }
+
+        if (e.code === "KeyW") {
+            BOARD_AREA.nextStep();
+        } else if (e.keyCode === 32) {
+            if (that.pause) {
+                that.pause = false;
+                document.getElementById("playPause").src = "./img/play.png";
+            } else {
+                that.pause = true;
+                document.getElementById("playPause").src = "./img/pause.png";
             }
         }
     }, false);
@@ -88,11 +88,7 @@ GameEngine.prototype.startInput = function () {
             var y = e.clientY - that.ctx.canvas.getBoundingClientRect().top;
             var xTile = (x - (x % TILE_SIZE)) / TILE_SIZE;
             var yTile = (y - (y % TILE_SIZE)) / TILE_SIZE;
-            if (BOARD_AREA.board[yTile][xTile] === 1) {
-                BOARD_AREA.board[yTile][xTile] = 0;
-            } else {
-                BOARD_AREA.board[yTile][xTile] = 1;
-            }
+            BOARD_AREA.board[yTile][xTile] = BOARD_AREA.board[yTile][xTile] ? 0 : 1;
         }
     }, false);
 }

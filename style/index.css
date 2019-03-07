@@ -34,10 +34,6 @@ hr {
     position: relative;
 }
 
-.label {
-    display: inline;
-}
-
 #playPause {
     position: absolute;
     z-index: 1000;
@@ -45,7 +41,7 @@ hr {
     width:60px;
     height:43px;
     left: 50%;
-    top: 56.5%;
+    top: 58.5%;
 }
 
 #volumeSlider {
