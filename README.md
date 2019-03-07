@@ -1,2 +1,7 @@
-# Interaction
-Assignment 2 - Interaction | TCSS 491 Computational World
+# Comp-World-Interaction
+
+Assignment 1 Animation for TCSS 491 Computational World.
+
+By: Harrison Lee
+
+Instructor: Chris Marriott
