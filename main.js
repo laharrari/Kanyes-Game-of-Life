@@ -159,7 +159,7 @@ AM.downloadAll(function () {
         BOARD_AREA.music.volume = volumeSlider.value;
         BOARD_AREA.myCurrentVolume = BOARD_AREA.music.volume;
         BOARD_AREA.myIsMute = false;
-        muteButton.innerHTML = "Mute";
+        muteButton.innerHTML = "\"Mute\"";
     }, false);
 
     // For muting audio with mute button
@@ -170,11 +170,11 @@ AM.downloadAll(function () {
             volumeSlider.value = BOARD_AREA.myCurrentVolume;
             BOARD_AREA.myCurrentVolume = BOARD_AREA.music.volume;
             BOARD_AREA.myIsMute = false;
-            muteButton.innerHTML = "Mute";
+            muteButton.innerHTML = "\"Mute\"";
         } else {
             BOARD_AREA.myCurrentVolume = BOARD_AREA.music.volume;
             BOARD_AREA.music.volume = 0.0;
-            muteButton.innerHTML = "Unmute";
+            muteButton.innerHTML = "\"Unmute\"";
             volumeSlider.value = 0.0;
             BOARD_AREA.myIsMute = true;
         }

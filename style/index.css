@@ -23,7 +23,7 @@ hr {
     background-color: #fdb897;
     float: right;
     font-family: Arial;
-    font-size: 150%;
+    font-size: 142%;
     color: black;
 }
 
@@ -40,14 +40,14 @@ hr {
     float: bottom;
     width:60px;
     height:43px;
-    left: 50%;
-    top: 58.75%;
+    left: 65%;
+    top: 55.9%;
 }
 
 #volumeSlider {
     position: absolute;
     left: 0%;
-    top: 75%;
+    top: 69%;
     z-index: 1000;
     float: bottom;
 }
@@ -56,7 +56,7 @@ hr {
     font-family: Arial;
     position: absolute;
     left: 40%;
-    top: 75.3%;
+    top: 69.2%;
     z-index: 1000;
     float: bottom;
 }
