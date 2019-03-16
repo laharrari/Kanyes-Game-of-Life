@@ -142,6 +142,38 @@ gameBoard.prototype.nextStep = function () {
     this.board = newBoard;
 }
 
+window.onload = function () {
+    var socket = io.connect("http://24.16.255.56:8888");
+
+    var text = document.getElementById("text");
+    var saveButton = document.getElementById("save");
+    var loadButton = document.getElementById("load");
+    var canvas = document.getElementById("gameWorld");
+
+    saveButton.onclick = function () {
+        console.log("save");
+        text.innerHTML = "Saved."
+        socket.emit("save", {
+            studentname: "Harrison Lee", statename: "Kanye's Game of Life", data: {
+                board: BOARD_AREA.board
+            }
+        });
+        canvas.focus();
+    };
+
+    loadButton.onclick = function () {
+        console.log("load");
+        text.innerHTML = "Loaded."
+        socket.emit("load", { studentname: "Harrison Lee", statename: "Kanye's Game of Life" });
+        canvas.focus();
+    };
+
+    socket.on("load", function (data) {
+        console.log(data.data.board);
+        BOARD_AREA.board = data.data.board;
+    });
+};
+
 AM.queueDownload("./img/the_life_of_cells.png");
 
 AM.downloadAll(function () {

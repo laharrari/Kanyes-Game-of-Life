@@ -99,3 +99,21 @@ hr {
     z-index: 1000;
     float: bottom;
 }
+
+#save {
+    font-family: Arial;
+    position: absolute;
+    left: 100%;
+    top: 73.5%;
+    z-index: 1000;
+    float: bottom;
+}
+
+#load {
+    font-family: Arial;
+    position: absolute;
+    left: 108%;
+    top: 73.5%;
+    z-index: 1000;
+    float: bottom;
+}
