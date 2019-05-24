@@ -1,7 +1,3 @@
-# Comp-World-Interaction
+# Kanye's Game of Life
 
-Assignment 2 Interaction for TCSS 491 Computational World.
-
-By: Harrison Lee
-
-Instructor: Chris Marriott
+Taking Conway's Game of Life and add graphical twist.
